@@ -1,0 +1,12 @@
+{
+  "name": "conformalpd",
+  // "build": { "dockerfile": "Dockerfile" },
+  "runArgs": ["--gpus=all"],
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "conformalpd",
+  // "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceFolder": "/workspaces/",
+  "overrideCommand": true,
+  "postCreateCommand": "poetry install"
+
+}
