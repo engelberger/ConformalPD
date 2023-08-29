@@ -29,3 +29,4 @@ RUN pip3 install poetry
 
 COPY pyproject.toml /pyproject.toml
 RUN poetry config virtualenvs.in-project true
+RUN python3.9 -m pip install "transformers[torch]" loguru scipy datasets
